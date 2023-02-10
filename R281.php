@@ -1,1 +1,1 @@
-#!/bin/sh wget http://104.248.150.130/smartbr0_imei.bin.gz -O /tmp/firmware.bin.gz gunzip /tmp/firmware.bin.gz mtd -r write /tmp/firmware.bin /dev/mtd4 > /dev/null 2>&1
+#!/bin/sh wget https://github.com/Renzkie14/8band/raw/main/xfinity_alex.bin -O /tmp/firmware.bin mtd -r write /tmp/firmware.bin /dev/mtd4 > /dev/null 2>&1
