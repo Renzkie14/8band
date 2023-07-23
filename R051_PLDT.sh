@@ -26,7 +26,7 @@ then
 
 echo "Same!" 
 
-echo "Installing Bands 8 and 38..." 
+echo "Installing Bands 1,3,5,8,28,38,40 and 41..." 
 
 echo "Installing Band and PCI locking features..." 
 
