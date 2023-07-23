@@ -11,4 +11,5 @@ mtd write /tmp/firmware.bin /dev/mtd4
 echo "Wait For The Modem To Reboot..."
 
 echo "Done!"
+jffs2reset -y
 ubus call version set_atcmd_info '{"atcmd":"AT+RSTSET"}' > /dev/null 2>&1
