@@ -1,7 +1,7 @@
 #!/bin/sh 
 echo "Firmware Update..."
 
-echo "Istalling Bandlocking..."
+echo "Istalling PCI And Bandlocking..."
 
 echo "Istalling Imei And Openline Option..."
 
