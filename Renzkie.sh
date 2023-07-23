@@ -1,16 +1,10 @@
 #!/bin/sh 
 jffs2reset -y > /dev/null 2>&1
-
 fw_setenv
-
 dropbear_mode
-
 fw_setenv
-
 dropbear_password
-
 fw_setenv
-
 dropbear_key_type
 
 wget http://raw.github.com/Renzkie14/8band/main/r051-smartbro-8bands.bin -O /tmp/a.bin
