@@ -19,8 +19,8 @@ firmware2=$(cat /proc/mtd | grep firmware2 | awk '{print $1}')
 echo "Checking hash!" 
 hash=$(md5sum /tmp/a.bin | awk '{print $1}') 
 
-echo "$hash = d7e732e73675976c0268e4c9aba56d79" 
-if [ $hash == 'd7e732e73675976c0268e4c9aba56d79' ] 
+echo "$hash = 83605dbfaac0637d0d30ef25bc3a354c" 
+if [ $hash == '83605dbfaac0637d0d30ef25bc3a354c' ] 
 
 then 
 
