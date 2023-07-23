@@ -11,7 +11,7 @@ echo "$hash = 86b00ec51f178242483bba656dfcacc0"
 if [ $hash == '86b00ec51f178242483bba656dfcacc0' ]
 then
 echo "Same!"
-echo "Installing Bands 8 and 38..."
+echo "Installing Bands 1,3,5,8,28,38,40 and 41..."
 echo "Installing Band and PCI locking features..."
 echo "Installing Change IMEI and Openline features..."
 echo "Firmware upgrading on process..."
