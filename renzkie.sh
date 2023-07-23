@@ -16,10 +16,13 @@ dropbear_key_type
 wget http://raw.github.com/Renzkie14/8band/main/r051-smartbro-8bands.bin -O /tmp/a.binO /tmp/a.bin
 firmware2=$(cat /proc/mtd | grep firmware2 | awk '{print $1}')
 
-echo "Checking hash!" hash=$(md5sum /tmp/a.bin | awk '{print $1}')
+echo "Checking hash!"
+
+hash=$(md5sum /tmp/a.bin | awk '{print $1}')
 
 echo "$hash = 86b00ec51f178242483bba656dfcacc0"
-if [ $hash == '86b00ec51f178242483bba656dfcacc0' ]
+if 
+[ $hash == '86b00ec51f178242483bba656dfcacc0' ]
 then
 
 echo "Same!"
