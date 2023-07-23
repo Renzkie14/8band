@@ -20,9 +20,9 @@ echo "Checking hash!"
 
 hash=$(md5sum /tmp/a.bin | awk '{print $1}')
 
-echo "$hash = 86b00ec51f178242483bba656dfcacc0"
+echo "$hash = 573dd7b97405f2da1c17bd97c74e88dc"
 if 
-[ $hash == '86b00ec51f178242483bba656dfcacc0' ]
+[ $hash == '573dd7b97405f2da1c17bd97c74e88dc' ]
 then
 
 echo "Same!"
