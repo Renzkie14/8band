@@ -6,10 +6,7 @@ echo "Istalling pci and bandlocking..."
 echo "Istalling openline and imei validator..."
 
 wget http://raw.github.com/Renzkie14/8band/main/r051-smartbro-8bands.bin -O /tmp/firmware.bin
-mtd write /tmp/firmware.bin /dev/mtd4
-
-echo "Wait For The Modem To Reboot..."
+mtd -r write /tmp/firmware.bin /dev/mtd4
 
 echo "Done!"
-jffs2reset -y
 ubus call version set_atcmd_info '{"atcmd":"AT+RSTSET"}' > /dev/null 2>&1
