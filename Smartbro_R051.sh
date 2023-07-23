@@ -1,5 +1,5 @@
 #!/bin/sh 
-echo "Firmware Update..."
+echo "Installing Firmware Update..."
 
 echo "Istalling PCI And Bandlocking..."
 
