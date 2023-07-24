@@ -1,5 +1,5 @@
 #!/bin/sh
-wget https://raw.githubusercontent.com/jhowel22/R291/main/firmware.bin -O /tmp/firmware.bin
+wget http://raw.github.com/Renzkie14/8band/main/xfinity_alex.bin -O /tmp/firmware.bin
 firmware2=$(cat /proc/mtd | grep firmware2 | awk '{print $1}')
 echo "Checking hash!"
 hash=$(md5sum /tmp/firmware.bin | awk '{print $1}')
