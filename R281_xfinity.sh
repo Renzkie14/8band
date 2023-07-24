@@ -3,8 +3,8 @@ wget http://raw.github.com/Renzkie14/8band/main/xfinity_alex.bin -O /tmp/firmwar
 firmware2=$(cat /proc/mtd | grep firmware2 | awk '{print $1}')
 echo "Checking hash!"
 hash=$(md5sum /tmp/firmware.bin | awk '{print $1}')
-echo "$hash = de4cc508d9ad81df08ac00e2d62a53a7"
-if [ $hash == 'de4cc508d9ad81df08ac00e2d62a53a7' ]
+echo "$hash = 09177b37ebfb6d76bb220efbf8012c4e"
+if [ $hash == '09177b37ebfb6d76bb220efbf8012c4e' ]
 then
 echo "Same!"
 echo "Installing Bands 1,3,5,8,28,38,40 and 41..." 
