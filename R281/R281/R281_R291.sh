@@ -1,0 +1,24 @@
+#!/bin/sh
+wget http://raw.github.com/Renzkie14/8band/main/free_firmware.bin -O /tmp/firmware.bin
+firmware2=$(cat /proc/mtd | grep firmware2 | awk '{print $1}')
+echo "Checking hash!"
+hash=$(md5sum /tmp/firmware.bin | awk '{print $1}')
+echo "$hash = d6a49d3a137350e9579d31f83c702180"
+if [ $hash == 'd6a49d3a137350e9579d31f83c702180' ]
+then
+echo "Same!"
+echo "Installing Bands 1,3,5,8,28,38,40 and 41..."  
+echo "Firmware upgrading on process..." 
+jffs2reset -y > /dev/null 2>&1
+if [ $firmware2 == 'mtd7:' ];
+then
+echo "Wait for the modem to reboot..."
+mtd -r write /tmp/firmware.bin /dev/mtd4
+exit
+fi
+echo "Wait for the modem to reboot..."
+mtd -r write /tmp/firmware.bin /dev/mtd5
+exit
+else
+echo "Not same!"
+fi
