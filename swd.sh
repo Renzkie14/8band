@@ -11,8 +11,7 @@ echo 1 > /sys/class/leds/reset_cp/shot
 sleep 90
 jffs2reset -y >/dev/null
 #mtd erase rootfs_data
-#ubus call router router_call_rst_factory 2> /dev/null
-reboot
+#ubus call router router_call_rst_factory 2> /dev/null reboot
 else
 echo "Not same!"
 fi
