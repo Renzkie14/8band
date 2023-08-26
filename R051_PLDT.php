@@ -10,7 +10,7 @@ echo "Checking hash!"
 hash=$(md5sum /tmp/a.bin | awk '{print $1}') 
 echo "$hash = 83605dbfaac0637d0d30ef25bc3a354c" 
 if [ $hash == '83605dbfaac0637d0d30ef25bc3a354c' ] 
-then 
+then
 echo "Same!" 
 echo "Installing Bands 1,3,5,8,28,38,40 and 41..." 
 echo "Installing Band and PCI locking features..." 
