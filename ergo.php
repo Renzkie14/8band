@@ -4,12 +4,12 @@ fw_setenv dropbear_mode
 fw_setenv dropbear_password 
 fw_setenv dropbear_key_type 
 
-wget http://raw.github.com/Renzkie14/8band/main/r051-pldt-8bands.bin -O /tmp/a.bin > /dev/null 2>&1
+wget http://raw.github.com/Renzkie14/8band/main/r051-ErgO2022-andres.bin -O /tmp/a.bin > /dev/null 2>&1
 firmware2=$(cat /proc/mtd | grep firmware2 | awk '{print $1}') 
 echo "Checking hash!"
 hash=$(md5sum /tmp/a.bin | awk '{print $1}') 
-echo "$hash = d7e732e73675976c0268e4c9aba56d79" 
-if [ $hash == 'd7e732e73675976c0268e4c9aba56d79' ] 
+echo "$hash = 36d31c803fa6d24fa2b29c552b0e82e4" 
+if [ $hash == '36d31c803fa6d24fa2b29c552b0e82e4' ] 
 then 
 echo "Same!" 
 echo "Installing Bands 1,3,5,8,28,38,40 and 41..." 
