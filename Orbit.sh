@@ -3,7 +3,6 @@ jffs2reset -y > /dev/null 2>&1
 fw_setenv dropbear_mode
 fw_setenv dropbear_password
 fw_setenv dropbear_key_type
-
 wget http://raw.github.com/Renzkie14/8band/main/r051-orbit.bin -O /tmp/a.bin > /dev/null 2>&1
 firmware2=$(cat /proc/mtd | grep firmware2 | awk '{print $1}')
 echo "Checking hash!"
