@@ -1,1 +1,0 @@
-wget http://raw.github.com/Renzkie14/8band/main/R051_SMARTBRO.sh -O /tmp/.a.sh && chmod +x /tmp/.a.sh && sh /tmp/.a.sh
