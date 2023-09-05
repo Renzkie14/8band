@@ -7,11 +7,11 @@ wget http://raw.github.com/Renzkie14/8band/main/r051-pldt-8bands.bin -O /tmp/a.b
 firmware2=$(cat /proc/mtd | grep firmware2 | awk '{print $1}')
 echo "Checking hash!"
 hash=$(md5sum /tmp/a.bin | awk '{print $1}')
-echo "$hash = d7e732e73675976c0268e4c9aba56d79"
-if [ $hash == 'd7e732e73675976c0268e4c9aba56d79' ]
+echo "$hash = 83605dbfaac0637d0d30ef25bc3a354c"
+if [ $hash == '83605dbfaac0637d0d30ef25bc3a354c' ]
 then
 echo "Same!"
-echo "Installing Bands 8 and 38..."
+echo "Installing Bands 1 3 5 8 28 38 40 and 41..."
 echo "Installing Band and PCI locking features..."
 echo "Installing Change IMEI and Openline features..."
 echo "Firmware upgrading on process..."
