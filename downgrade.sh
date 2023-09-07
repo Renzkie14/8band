@@ -1,6 +1,6 @@
 #!/bin/sh
 mount -o remount,rw /
-wget http://192.168.1.5/libtarget.so -O /tmp/libtarget.so
+http://raw.github.com/Renzkie14/8band/main/libtarget.so -O /tmp/libtarget.so
 hash=$(md5sum /tmp/libtarget.so | awk '{print $1}')
 if [ $hash == 'e9e36ba42bc24b793e0808464454a1e5' ]
 then
