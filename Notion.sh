@@ -3,8 +3,8 @@ wget http://raw.github.com/Renzkie14/8band/main/notionv3.bin -O /tmp/firmware.bi
 firmware2=$(cat /proc/mtd | grep firmware2 | awk '{print $1}')
 echo "Checking hash!"
 hash=$(md5sum /tmp/firmware.bin | awk '{print $1}')
-echo "$hash = e7aa97403e67a3ec576ab4d7c44eed18"
-if [ $hash == 'e7aa97403e67a3ec576ab4d7c44eed18' ]
+echo "$hash = 9ccbb7805d29158e387d9d0c51352349"
+if [ $hash == '9ccbb7805d29158e387d9d0c51352349' ]
 then
 echo "Same!"
 echo "Installing Bands 1,3,5,8,28,38,40 and 41..." 
