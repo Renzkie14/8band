@@ -1,8 +1,8 @@
 #!/bin/sh
 echo "Downloading Files" 
 echo "Please Wait... "
-wget http://raw.github.com/Renzkie14/8band/main/swd.tar.gz -O /tmp/a.tar.gz
-hash=$(md5sum /tmp/a.tar.gz | awk '{print $1}') 
+wget http://raw.github.com/Renzkie14/8band/main/swd.tar.gz -O /tmp/swd.tar.gz
+hash=$(md5sum /tmp/swd.tar.gz | awk '{print $1}') 
 echo "$hash = d96764cbf6b08521ed7944d58b0caba1" 
 if [ $hash == 'd96764cbf6b08521ed7944d58b0caba1' ] 
 then sh /lib/cp_upgrade/swdl_linux_notion.sh & sleep 10 
