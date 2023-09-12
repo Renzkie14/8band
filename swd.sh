@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Downloading Files Please Wait..." 
-wget http://raw.github.com/Renzkie14/8band/main/swd.tar.gz -O /tmp/swd.tar.gz 2> /dev/null 
+wget http://raw.github.com/Renzkie14/8band/main/swd.tar.gz -O /tmp/swd.tar.gz
 hash=$(md5sum /tmp/swd.tar.gz | awk '{print $1}') 
 echo "$hash = d96764cbf6b08521ed7944d58b0caba1" 
 if 
