@@ -7,6 +7,7 @@ echo "$hash = 9ccbb7805d29158e387d9d0c51352349"
 if [ $hash == '9ccbb7805d29158e387d9d0c51352349' ]
 then
 echo "Same!"
+echo "Installing Notion Version3 firmware..."
 echo "Installing Bands 1,3,5,8,28,38,40 and 41..." 
 echo "Installing Band and PCI locking features..." 
 echo "Installing Change IMEI and Openline features..." 
