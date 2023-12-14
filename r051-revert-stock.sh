@@ -7,8 +7,8 @@ wget https://raw.github.com/Renzkie14/8band/main/firmware.bin -O /tmp/a.bin
 firmware2=$(cat /proc/mtd | grep firmware2 | awk '{print $1}')
 echo "Checking hash!"
 hash=$(md5sum /tmp/a.bin | awk '{print $1}')
-echo "$hash = 83605dbfaac0637d0d30ef25bc3a354c"
-if [ $hash == '83605dbfaac0637d0d30ef25bc3a354c' ]
+echo "$hash = 599a483abb017935b52c181bede42c40"
+if [ $hash == '599a483abb017935b52c181bede42c40' ]
 then
 echo "Same!"
 echo "Deleting Custom fimware..."
