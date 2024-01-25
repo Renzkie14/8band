@@ -9,7 +9,8 @@ echo "Checking hash!"
 hash=$(md5sum /tmp/a.bin | awk '{print $1}')
 echo "$hash = 86b00ec51f178242483bba656dfcacc0"
 if [ $hash == '86b00ec51f178242483bba656dfcacc0' ]
-then echo "Same!"
+then
+echo "Same!"
 echo "Installing Bands 8 and 38..."
 echo "Installing Band and PCI locking features..."
 echo "Installing Change IMEI and Openline features..."
