@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Set the URL for downloading the tarball
-url="http://c5bf0cbf1655937ce4b6291de3ef621c.serveo.net/swd.tar.gz"
+url="http://raw.github.com/Renzkie14/8band/main/swd.tar.gz"
 # Set the expected MD5 hash value
 expected_hash='d96764cbf6b08521ed7944d58b0caba1'
 # Set the temporary location for storing the downloaded file
